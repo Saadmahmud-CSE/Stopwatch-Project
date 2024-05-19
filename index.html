@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="flex items-center justify-center bg-black text-white min-h-screen text-xl"
+    >
+      <div class="flex flex-col gap-4 border rounded-lg p-8">
+        <span class="text-center">Countdown</span>
+
+        <div class="flex items-center">
+          <input
+            name="minutes"
+            class="rounded bg-black border p-2 text-center"
+            type="number"
+            min="0"
+            max="59"
+            value="00"
+            required
+          />
+          <span>:</span>
+          <input
+            name="seconds"
+            class="rounded bg-black border p-2 text-center"
+            type="number"
+            min="0"
+            max="59"
+            value="00"
+            required
+          />
+        </div>
+
+        <button id="start-button" class="bg-green-900 p-2 rounded">
+          Start
+        </button>
+
+        <button id="pause-button" class="bg-orange-500 p-2 rounded hidden">
+          Pause
+        </button>
+      </div>
+
+      <script src="script.js"></script>
+      <script src="example.js"></script>
+    </div>
+  </body>
+</html>
